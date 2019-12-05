@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icondashboard';
+  src:  url('fonts/icondashboard.eot?8k2ug2');
+  src:  url('fonts/icondashboard.eot?8k2ug2#iefix') format('embedded-opentype'),
+    url('fonts/icondashboard.ttf?8k2ug2') format('truetype'),
+    url('fonts/icondashboard.woff?8k2ug2') format('woff'),
+    url('fonts/icondashboard.svg?8k2ug2#icondashboard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icondashboard' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-toa:before {
+  content: "\61";
+  color: #ccc;
+}
+.icon-buku:before {
+  content: "\62";
+  color: #ccc;
+}
+.icon-ceklist:before {
+  content: "\63";
+  color: #ccc;
+}
+.icon-seru:before {
+  content: "\64";
+  color: #ccc;
+}
+.icon-edit:before {
+  content: "\65";
+  color: #ccc;
+}
+.icon-tgl:before {
+  content: "\66";
+  color: #ccc;
+}
+.icon-ok:before {
+  content: "\67";
+  color: #ccc;
+}
+.icon-siswa:before {
+  content: "\68";
+  color: #ccc;
+}

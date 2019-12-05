@@ -1,0 +1,418 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 10, 2019, 2:17:38 PM
+    Author     : zeke
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.fr {
+ float: right; 
+}
+.fl {
+ float: left;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+    font-family:'roboto', sans-serif;
+    background-color: #ecf0f1;
+    color: #4d4d4d;
+}
+.rev {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+.center-abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb32 {
+    margin-bottom: 32px;
+}
+.mb64 {
+    margin-bottom: 64px;
+}
+.mt5 {
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt32 {
+    margin-top: 32px;
+}
+.mt64 {
+    margin-top: 64px;
+}
+.ml32 {
+    margin-left: 32px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.mw1024 {
+    max-width: 1024px;
+}
+.mw1280 {
+    max-width: 1280px;
+}
+.pt64 {
+    padding-top: 64px;
+}
+.pr15 {
+    padding-right: 15px;
+}
+.p16 {
+    padding: 16px;
+}
+.w60 {
+    width: 60%;
+}
+.inlinebox{
+    display: inline-block;
+}
+.font-sm {
+    font-size: 12px;
+}
+.shadow-card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.rounded {
+    border-radius: 9px;
+}
+.header-admin{
+    position: relative;
+    height: 72px;
+    background-color: white;
+    z-index: 2;
+}
+.logo-macca {
+    padding: 6px 0 6px 0;
+    position: relative;
+    left: 2%;
+}
+.logo-macca >img {
+    width: 49px;
+}
+.header-right-wrap {
+    position: absolute;
+    right: 2%;
+    top: 15px;
+}
+.logoutlink {
+    color: red;
+}
+.sty-ico-akun {
+    font-size: 31px;
+    margin-right: 7px;
+    color: #898989;
+}
+.container{
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-info {
+    margin-top: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.main-info >img{
+    width: 100%;
+    border-radius: 11px;
+    box-shadow:0 1px 9px rgba(0,0,0,0.25);
+    object-fit: cover;
+    height: 290px;
+}
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    position: absolute;
+    background-image: linear-gradient(to right top,
+#ff0000, #ea0056, #b30083, #663490,
+#003b7c);
+    border-radius: 11px;
+    top: 0px;
+    mix-blend-mode: multiply;
+}
+.right-akun {
+    position: absolute;
+    display: flex;
+    align-items: center;
+   right: -74px;
+}
+.right-akun >img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid #ecf0f1;
+    object-fit: cover;
+}
+.icoedit {
+    font-family: 'icondashboard', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    right: 11px;
+    top: 95%;
+}
+.icoedit a {
+    color: gray;
+}
+.text-profil h3 {
+    margin-right: 46px;
+    color: white;
+    font-size: 25px;
+}
+.text-profil p {
+    color: white;
+    font-size: 12px;
+    position: relative;
+}
+.left-info {
+    position: absolute;
+    left: 45px;
+    color: white;
+    width: 45%;
+}
+.left-info h2 {
+    font-weight: 300;
+    font-size: 3.5em;
+}
+.left-info p{
+    font-size: 14px;
+    margin-top:10px;
+}
+.message-card {
+    background-color: white;
+    width: 100%;
+    border-radius: 11px;
+    box-shadow:0 1px 5px rgba(0,0,0,0.1);
+    padding: 16px;
+    position: relative;
+    margin-top: 32px;
+    display: flex;
+}
+.toa-icon {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'icondashboard', sans-serif;
+    font-size: 3em;
+    color: #d00;
+}
+.message {
+    flex-grow: 9;
+    min-height: 32px;
+    margin-left: 10px;
+}
+.message-date {
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+    color: lightgray;
+}
+.message-from {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+.message-text {
+    margin-top: 10px;
+}
+.btn-lihat-semua {
+    text-align: right;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+    color:#017ab5;
+}
+.info-umum {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 32px;
+}
+.info-umum-card {
+    background-color: white;
+    width: 100%;
+    border-radius: 11px;
+    box-shadow:0 1px 5px rgba(0,0,0,0.1);
+    position: relative;
+    min-height: 99px;
+    max-height: 200px;
+    overflow: hidden;
+}
+.judul-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.judul-info-icon {
+    border-radius: 5px;
+    height: 32px;
+    width: 32px;
+    color: white;
+    flex: 0 0 32px;
+    font-family: 'icondashboard', sans-serif;
+    font-size: 20px;
+    padding: 6px;
+    line-height: 1;
+}
+.judul-info-text {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.line-hori-info {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background-color: #ecf0f1;
+}
+.big-info-text {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.small-info-text {
+    font-size: 10px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+    color: gray;
+}
+.info-tambahan {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 32px;
+    margin-bottom:32px;
+}
+.table-wrap {
+    margin: 20px 20px 10px 20px;
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+.fl-table td, .fl-table th {
+    text-align: left;
+    padding: 8px;
+}
+.fl-table thead th {
+    background: white;
+}
+.fl-table tr{
+    background: #F8F8F8;
+    border: 3px solid white;
+}
+.progress-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height:140px;
+}
+.total-progress {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    width: 30%;
+    justify-content: center;
+    min-height: 120px;
+}
+.nama-progress {
+    width: 30%;
+    font-size: 11px;
+    margin-right: 10px;
+    text-align: left;
+}
+.nilai-progress {
+    font-size: 11px;
+    margin-right: 10px;
+    text-align: left;
+}
+.bar-progress-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    flex-wrap: nowrap;
+}
+.bar-progress {
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 3px;
+    margin: 0 10px;
+}
+.kurikulum {
+    width: 90%;
+    background-color: #39b54a;
+    height: 2px;
+}
+.silabus {
+    width: 85%;
+    background-color: #39b54a;
+    height: 2px;
+}
+.kkm {
+    width: 93%;
+    background-color: #39b54a;
+    height: 2px;
+}
+.penilaian {
+    width: 75%;
+    background-color: #39b54a;
+    height: 2px;
+}
+.rapor {
+    width: 55%;
+    background-color: #39b54a;
+    height: 2px;
+}
